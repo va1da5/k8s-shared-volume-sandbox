@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: todo-config
+data:
+  todo-config.json: |
+    {
+      "database": "/tmp/tinydb/db.json",
+      "port": "8000",
+      "fromConfigMap": true
+    }
